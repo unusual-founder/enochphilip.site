@@ -1,0 +1,244 @@
+{
+  "HomePage": {
+    "intro": "Hi, I'm Enoch Philip",
+    "location": "Based in Borno State, Nigeria. NG",
+    "location_type": "Onsite | Remote",
+    "resume": "A skilled full-stack developer with a strong foundation in TypeScript, React, and blockchain technology. I create secure, scalable, and high-performance web and mobile applications, ensuring seamless user experiences. Passionate about problem-solving and delivering innovative digital solutions.",
+    "skills": {
+      "title": "Skills",
+      "sub_title": "My professional skills."
+    },
+    "services": {
+      "title": "Services",
+      "sub_title": "I'm a full-stack developer specializing in building high-performance web and mobile applications for brands, companies, institutions, and startups. I focus on delivering strategic, scalable, and secure digital solutions tailored to your needs.",
+      "cta": {
+        "title": "Let's Build Something Great!",
+        "sub_title": "I'm available for freelance projects. Whether you need a web or mobile solution, let's collaborate to bring your vision to life. Get in touch, and let's create something amazing together!",
+        "button": "Get in Touch"
+      }
+    }
+  },
+  "AboutPage": {
+    "title": "About",
+    "description": "A short story about me",
+    "resume": {
+      "paragraf_1": "Hey there! Thanks for stopping by my personal website. I'm a full-stack developer with a passion for building secure, scalable, and high-performance web and mobile applications. With expertise in TypeScript, React, Next.js, and blockchain development, I thrive on solving complex problems and delivering seamless user experiences.",
+      "paragraf_2": "I specialize in creating innovative digital solutions that are both functional and user-friendly. My tech stack includes JavaScript, TypeScript, React, Next.js, and Express.js, along with experience in real-time systems, NFC payments, and blockchain integration. As an adaptable and quick learner, I embrace new challenges and continuously refine my skills to stay ahead in the ever-evolving tech landscape.",
+      "paragraf_3": "Collaboration and communication are key to my work. I enjoy working with teams, contributing my expertise, and learning from others. My problem-solving mindset and leadership abilities allow me to navigate complex projects efficiently. If you are looking for a developer to bring your ideas to life, let's connect and create something amazing together!"
+    },
+    "career": {
+      "title": "Career",
+      "sub_title": "My professional career journey.",
+      "careers": {
+        "career_0": {
+          "position": "Head of Technology in the Research and Technology Division",
+          "company": "Himpunan Mahasiswa Sistem Informasi Universitas Jambi (HIMASI UNJA)",
+          "logo": "/images/careers/himasi-unja.jpeg",
+          "location": "Jambi, Indonesia 🇮🇩",
+          "location_type": "Onsite",
+          "type": "Part-time",
+          "start_date": "2024-01",
+          "end_date": null,
+          "industry": "school",
+          "link": "https://himasi.unja.ac.id/"
+        },
+        "career_1": {
+          "position": "Mobile Development Cohort",
+          "company": "Bangkit Academy led by Google, Tokopedia, Gojek & Traveloka",
+          "logo": "/images/careers/bangkit.png",
+          "location": "Bandung, Indonesia 🇮🇩",
+          "location_type": "Remote",
+          "type": "Part-time",
+          "start_date": "2024-12",
+          "end_date": "2025-12",
+          "industry": "school",
+          "link": "https://grow.google/intl/id_id/bangkit/?tab=mobile-development",
+          "responsibilities": {
+            "responsibility_1": "Mastered Android development using Kotlin, Jetpack Components, and modern tools like Room Database and DataStore for state and data management.",
+            "responsibility_2": "Gained hands-on experience with ViewModel, RecyclerView, and Hilt for dependency injection to create robust and scalable mobile applications.",
+            "responsibility_3": "Collaborated with a cross-functional team to develop a Company-Based Capstone Project, applying Agile methodologies and real-world problem-solving.",
+            "responsibility_4": "Enhanced teamwork, problem-solving, and communication skills in a multicultural environment."
+          }
+        },
+        "career_2": {
+          "position": "Mobile Developer",
+          "company": "Pt. Amanah Karya Indonesia (Amanah Corp)",
+          "logo": "/images/careers/amanah-karya-indonesia.jpeg",
+          "location": "Depok, Indonesia 🇮🇩",
+          "location_type": "Remote",
+          "type": "Internship",
+          "start_date": "2024-12",
+          "end_date": "2025-12",
+          "industry": "school",
+          "link": "https://amanahcorp.co.id/",
+          "responsibilities": {
+            "responsibility_1": "Designed and developed a mobile application using Kotlin, incorporating Room Database, Hilt, and ViewModel for optimal performance and scalability.",
+            "responsibility_2": "Implemented secure and user-friendly features tailored to the berbagi.link platform to improve user engagement and accessibility.",
+            "responsibility_3": "Worked closely with PT Amanah Corp to ensure alignment with business objectives and deliver impactful, real-world solutions.",
+            "responsibility_4": "Strengthened technical and soft skills, including problem-solving, teamwork, and communication, in a professional, multicultural setting."
+          }
+        }
+      }
+    },
+    "education": {
+      "title": "Education",
+      "sub_title": "My academic journey and qualifications.",
+      "school": "University of Maiduguri",
+      "major": "Bachelor of Engineering in Computer Engineering (B.Eng)",
+      "logo": "/images/education/unimaid.png",
+      "location": "Maiduguri, Borno State, Nigeria",
+      "degree": "Bachelor's Degree",
+      "start_year": 2022,
+      "end_year": 2027,
+      "link": "https://www.unimaid.edu.ng"
+    },
+    "resume_download_button": "Download Resume",
+    "portfolio_download_button": "Download Portfolio"
+  },
+  "AchievementsPage": {
+    "title": "Achievements",
+    "description": "A showcase of the certificates and badges I have earned during my professional journey.",
+    "error": "Oops! Something went wrong on the server.",
+    "no_data": "No achievements available at the moment.",
+    "show_credential": "View Credentials"
+  },
+  "ProjectsPage": {
+    "title": "Projects",
+    "description": "A selection of projects I have worked on, both private and open source.",
+    "view_project": "Explore Project",
+    "tech_stack": "Technologies Used",
+    "back_button": "Go Back",
+    "source_code_text": "View Source Code",
+    "live_demo_text": "See Live Demo",
+    "error": "Oops! Something went wrong on the server.",
+    "no_data": "No projects available at the moment."
+  },
+  "title": "Dashboard",
+  "description": "Welcome to my personal dashboard, built using Next.js API routes deployed as serverless functions.",
+  "error": "Oops! Something went wrong on the server.",
+  "github": {
+    "title": "Contributions",
+    "sub_title": "My GitHub contributions from last year.",
+    "title_total_contribution": "Total Contributions",
+    "title_total_this_week_contribution": "This Week's Contributions",
+    "title_best_contribution": "Best Contribution",
+    "title_average_contribution": "Average Contributions",
+    "title_less_contribution": "Least Contributions",
+    "title_more_contribution": "Most Contributions",
+    "unit": "day"
+  },
+  "wakatime": {
+    "title": "Weekly Statistics",
+    "sub_title": "My WakaTime stats from the last 7 days.",
+    "last_update": "Last Updated",
+    "start_date": "Start Date",
+    "end_date": "End Date",
+    "daily_average": "Average Daily Coding Time",
+    "daily_total": "Total Coding Time This Week",
+    "best_day": "Best Day of Coding",
+    "all_time_since_today": "All Time (up to Today)",
+    "languages": "Programming Languages"
+  },
+  "codewars": {
+    "title": "Codewars Statistics",
+    "sub_title": "My performance and score on Codewars.",
+    "title_rank": "Rank",
+    "title_honor": "Honor",
+    "title_completed": "Completed Challenges",
+    "title_leaderboard": "Leaderboard Position",
+    "title_clan": "Clan",
+    "title_skills": "Skills"
+  },
+  "monkeytype": {
+    "title": "Monkeytype Statistics",
+    "sub_title": "My performance and statistics on Monkeytype.",
+    "joined": "Joined",
+    "current_streak": "Current Streak",
+    "unit_days": "days",
+    "title_test_started": "Test Started",
+    "title_test_completed": "Test Completed",
+    "title_time_typing": "Typing Time",
+    "title_leaderboard": "All-Time English Leaderboard",
+    "unit_seconds": "Seconds",
+    "unit_time": "Time",
+    "unit_words": "Words",
+    "top": "Top",
+    "days_ago": "Days Ago",
+    "xp_until_next_level": "XP Until Next Level",
+    "total_xp": "Total XP"
+  },
+  "ChatRoomPage": {
+    "title": "Chat Room",
+    "description": "Feel free to share your thoughts, suggestions, questions, or anything else!",
+    "placeholder": "Type a message...",
+    "sign_in": {
+      "title": "Please sign in to begin. Rest assured, your data is safe.",
+      "label": "Sign in with",
+      "signed_label": "Signed in as",
+      "sign_out_label": "Sign out"
+    },
+    "widget": {
+      "title": "Chat Room",
+      "tooltip_title": "Enter Chat Room",
+      "tooltip_minimize": "Minimize",
+      "tooltip_signout": "Sign out"
+    }
+  },
+  "ContactPage": {
+    "title": "Contact",
+    "description": "I'd love to hear from you!",
+    "social_media": {
+      "title": "Connect with me on social media",
+      "gmail": {
+        "title": "Stay Connected",
+        "description": "Feel free to reach out via email for any questions or partnership opportunities."
+      },
+      "instagram": {
+        "title": "Join My Journey",
+        "description": "Follow me on Instagram for the latest updates, stories, and posts."
+      },
+      "linkedin": {
+        "title": "Let’s Build Together",
+        "description": "Let’s connect on LinkedIn to explore collaboration opportunities or discuss my professional background."
+      },
+      "tiktok": {
+        "title": "Join the Fun",
+        "description": "Follow me on TikTok for entertaining and engaging content."
+      },
+      "github": {
+        "title": "Discover the Code",
+        "description": "Check out the source code for all my projects on GitHub."
+      }
+    },
+    "form": {
+      "title": "Or send me a message",
+      "input_name": "Your Name",
+      "input_email": "Your Email",
+      "input_message": "Your Message",
+      "button": "Send Message"
+    }
+  },
+  "Footer": {
+    "hire": "Let’s Work Together.",
+    "copyright_1": "COPYRIGHT © ",
+    "copyright_2": "Enoch Philip. All rights reserved."
+  },
+  "LocaleSwitcher": {
+    "en": "🇺🇸",
+    "id": "🇮🇩",
+    "label": "Language"
+  },
+  "Navigation": {
+    "Home": "Home",
+    "About": "About",
+    "Achievements": "Achievements",
+    "Projects": "Projects",
+    "Dashboard": "Dashboard",
+    "Chat Room": "Chat Room",
+    "Contact": "Contact"
+  },
+  "NotFoundPage": {
+    "title": "Oops! Page not found",
+    "button": "Go to Home"
+  }
+}
