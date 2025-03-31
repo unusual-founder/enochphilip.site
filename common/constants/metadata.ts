@@ -13,17 +13,17 @@ export const METADATA = {
     type: "website",
     title: "Enoch Philip - Full-Stack Developer & Tech Enthusiast",
     description: "Explore my personal portfolio and blog, where I share my latest projects, coding tutorials, and tech insights.",
-    image: "/images/enoch.jpg", // Make sure this image is optimized for sharing (1200x630px)
+    image: "/images/enoch.png", // Make sure this image is optimized for sharing (1200x630px)
   },
   twitterCard: {
     cardType: "summary_large_image", // Use a large image for better preview on Twitter
     site: "@earhyel",
     title: "Enoch Philip - Developer Portfolio",
     description: "Explore my personal website and portfolio for all things related to full-stack development, web technologies, and more.",
-    image: "/images/enoch.jpg", // Same image as openGraph for consistency
+    image: "/images/enoch.png", // Same image as openGraph for consistency
   },
   exTitle: "| Enoch Philip",
-  profile: "/images/enoch.jpg",
+  profile: "/images/enoch.png",
   robots: "index, follow",
   canonical: process.env.DOMAIN,
   keywords: "Enoch Philip, full-stack developer, web developer, JavaScript, React, Node.js, TypeScript, blockchain, freelance, software engineering, developer portfolio, coding tutorials, blog, tech insights",
