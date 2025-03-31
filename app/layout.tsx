@@ -11,7 +11,7 @@ import Layouts from "@/common/components/layouts";
 import ThemeProviderContext from "@/common/stores/theme";
 import NextAuthProvider from "@/SessionProvider";
 import { METADATA } from "@/common/constants/metadata";
-import { onestSans } from "@/common/styles/fonts";
+import { onestSans, soraSans } from "@/common/styles/fonts";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
@@ -52,7 +52,7 @@ const RootLayout = async ({
         src="https://cloud.umami.is/script.js"
         data-website-id="8e2c9f27-a12b-48ca-8130-808ebe377aca"
       ></Script>
-      <body className={onestSans.className}>
+      <body className={`${soraSans.variable} ${onestSans.variable}`}>
         <NextTopLoader
           color="#05b6d3"
           initialPosition={0.08}

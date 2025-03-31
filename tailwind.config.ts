@@ -20,6 +20,10 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        onest: ["Onest", "sans-serif"],
+        sora: ["Sora", "sans-serif"],
+      },
     },
   },
   plugins: [],

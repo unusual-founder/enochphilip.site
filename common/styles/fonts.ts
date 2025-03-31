@@ -1,15 +1,15 @@
-import { Sora, Onest } from "next/font/google";
+import localFont from "next/font/local";
 
-export const soraSans = Sora({
+export const soraSans = localFont({
+  src: "../../public/fonts/Sora-VariableFont_wght.ttf",
   variable: "--soraSans-font",
-  subsets: ["latin"],
-  display: "fallback",
-  weight: ["300", "400", "500", "600", "700", "800"],
+  display: "swap",
+  weight: "300 800",
 });
 
-export const onestSans = Onest({
+export const onestSans = localFont({
+  src: "../../public/fonts/Onest-VariableFont_wght.ttf",
   variable: "--onestSans-font",
-  subsets: ["latin"],
-  display: "fallback",
-  weight: ["300", "400", "500", "600", "700", "800"],
+  display: "swap",
+  weight: "300 800",
 });

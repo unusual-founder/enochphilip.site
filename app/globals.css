@@ -10,6 +10,20 @@
     radial-gradient(ellipse 15% 15% at 60% -10%, rgba(254, 240, 138, 80%) 0%, rgb(8 0 0 / 0%)) no-repeat;
 } */
 
+@font-face {
+  font-family: "Onest";
+  src: url("/fonts/Onest-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sora";
+  src: url("/fonts/Sora-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
 ::-webkit-scrollbar {
   @apply w-1;
 }
