@@ -25,6 +25,7 @@ export const GET = async (req: NextRequest) => {
     if (querySearch) {
       const data = await getAchievementsData({ search: querySearch });
       return NextResponse.json(data, { status: 200 });
+      
     }
 
     const data = await getAchievementsData({});
