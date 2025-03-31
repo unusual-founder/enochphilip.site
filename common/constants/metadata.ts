@@ -16,7 +16,7 @@ export const METADATA = {
     image: "/images/enoch.png", // Make sure this image is optimized for sharing (1200x630px)
   },
   twitterCard: {
-    cardType: "summary_large_image", // Use a large image for better preview on Twitter
+    cardType: "summary_large_image", 
     site: "@earhyel",
     title: "Enoch Philip - Developer Portfolio",
     description: "Explore my personal website and portfolio for all things related to full-stack development, web technologies, and more.",
