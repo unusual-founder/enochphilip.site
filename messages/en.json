@@ -113,14 +113,15 @@
     "error": "Oops! Something went wrong on the server.",
     "no_data": "No projects available at the moment."
   },
-  "title": "Dashboard",
+  "DashboardPage": {
+    "title": "Dashboard",
   "description": "Welcome to my personal dashboard, built using Next.js API routes deployed as serverless functions.",
   "error": "Oops! Something went wrong on the server.",
   "github": {
     "title": "Contributions",
     "sub_title": "My GitHub contributions from last year.",
     "title_total_contribution": "Total Contributions",
-    "title_total_this_week_contribution": "This Week's Contributions",
+    "title_total_this_week_contributino": "This Week's Contributions",
     "title_best_contribution": "Best Contribution",
     "title_average_contribution": "Average Contributions",
     "title_less_contribution": "Least Contributions",
@@ -166,6 +167,7 @@
     "days_ago": "Days Ago",
     "xp_until_next_level": "XP Until Next Level",
     "total_xp": "Total XP"
+  }
   },
   "ChatRoomPage": {
     "title": "Chat Room",
@@ -185,31 +187,35 @@
     }
   },
   "ContactPage": {
-    "title": "Contact",
-    "description": "I'd love to hear from you!",
-    "social_media": {
-      "title": "Connect with me on social media",
-      "gmail": {
-        "title": "Stay Connected",
-        "description": "Feel free to reach out via email for any questions or partnership opportunities."
+      "title": "Get in Touch",
+      "description": "I’d love to connect with you! Whether you have a question, a collaboration idea, or just want to say hello, feel free to reach out.",
+      "social_media": {
+        "title": "Let's Connect on Social Media",
+        "gmail": {
+          "title": "Let's Stay in Touch",
+          "description": "Have a project in mind or just want to chat? Drop me an email, and I'll get back to you as soon as possible!"
+        },
+        "instagram": {
+          "title": "Follow My Journey",
+          "description": "Get a glimpse into my work, life, and behind-the-scenes moments. Follow me on Instagram for updates, insights, and inspiration."
+        },
+        "linkedin": {
+          "title": "Grow Together",
+          "description": "Looking for professional connections, industry insights, or collaboration opportunities? Let's network on LinkedIn and build something great together."
+        },
+        "tiktok": {
+          "title": "Be Part of the Fun",
+          "description": "Join me on TikTok for a mix of creativity, entertainment, and engaging content. Don’t miss out on the fun!"
+        },
+        "github": {
+          "title": "Explore My Projects",
+          "description": "Dive into my coding projects, open-source contributions, and technical experiments on GitHub. Let’s collaborate and build something amazing!"
+        },
+        "youtube": {
+          "title": "Learn and Explore",
+          "description": "Subscribe to my YouTube channel for tutorials, project showcases, and insights into my development journey. Let's grow together!"
+        }
       },
-      "instagram": {
-        "title": "Join My Journey",
-        "description": "Follow me on Instagram for the latest updates, stories, and posts."
-      },
-      "linkedin": {
-        "title": "Let’s Build Together",
-        "description": "Let’s connect on LinkedIn to explore collaboration opportunities or discuss my professional background."
-      },
-      "tiktok": {
-        "title": "Join the Fun",
-        "description": "Follow me on TikTok for entertaining and engaging content."
-      },
-      "github": {
-        "title": "Discover the Code",
-        "description": "Check out the source code for all my projects on GitHub."
-      }
-    },
     "form": {
       "title": "Or send me a message",
       "input_name": "Your Name",
