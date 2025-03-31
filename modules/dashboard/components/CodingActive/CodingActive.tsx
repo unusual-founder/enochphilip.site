@@ -32,8 +32,9 @@ const CodingActive = () => {
       if (lastUpdateDate) {
         const zoneDate = utcToZonedTime(
           zonedTimeToUtc(lastUpdateDate, "Asia/Jakarta"),
-          "Asia/Jakarta",
-        );
+            "Africa/Lagos"
+          );
+
         const distance = formatDistanceToNowStrict(zoneDate, {
           addSuffix: true,
         });
@@ -56,11 +57,11 @@ const CodingActive = () => {
       <SectionHeading
         title={t("wakatime.title")}
         icon={<WakatimeIcon className="mr-1" />}
-      />
+      />   
       <SectionSubHeading>
         {t("wakatime.sub_title")}
         <Link
-          href="https://wakatime.com/@satriabahari"
+          href="https://wakatime.com/@earhyel"
           target="_blank"
           className="text-sm text-neutral-600 hover:text-neutral-800 dark:text-neutral-500 dark:hover:text-neutral-400"
         >

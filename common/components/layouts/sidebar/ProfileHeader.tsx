@@ -23,10 +23,10 @@ const ProfileHeader = ({ expandMenu, imageSize }: ProfileHeaderProps) => {
     >
       {/* Bermasalah (bug) */}
       <Image
-        src={"/images/satria.jpg"}
+        src={"/images/enoch.jpg"}
         width={expandMenu ? 80 : imageSize * 0.9}
         height={expandMenu ? 80 : imageSize * 0.9}
-        alt="Satria Bahari"
+        alt="Enoch Philip"
         className="border-2 border-neutral-400 dark:border-neutral-600 lg:hover:scale-105"
         rounded="rounded-full"
       />
