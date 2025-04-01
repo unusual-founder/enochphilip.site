@@ -201,6 +201,10 @@
           "title": "Explore My Projects",
           "description": "Dive into my coding projects, open-source contributions, and technical experiments on GitHub. Let’s collaborate and build something amazing!"
         },
+        "twitter": {
+          "title": "Follow Me on Twitter",
+          "description": "Join the conversation on Twitter for updates, insights, and more from the developer community."
+        },
         "youtube": {
           "title": "Learn and Explore",
           "description": "Subscribe to my YouTube channel for tutorials, project showcases, and insights into my development journey. Let's grow together!"

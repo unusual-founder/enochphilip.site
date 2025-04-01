@@ -1,39 +1,32 @@
-import { BiLogoPostgresql } from "react-icons/bi";
 import { BsFillBootstrapFill } from "react-icons/bs";
-import { TbBrandFramerMotion } from "react-icons/tb";
-import { FaNpm } from "react-icons/fa6";
+import { TbBrandCpp, TbBrandFramerMotion, TbCurrencySolana } from "react-icons/tb";
+import { FaGoogle, FaNpm } from "react-icons/fa6";
 import {
   SiCss3,
   SiExpress,
-  SiFramer,
   SiGithub,
   SiHtml5,
   SiJavascript,
   SiNextdotjs,
   SiNodedotjs,
-  SiPrisma,
   SiReact,
   SiTailwindcss,
   SiTypescript,
-  SiVite,
-  SiLaravel,
-  SiPhp,
   SiRedux,
   SiVuedotjs,
   SiFirebase,
   SiReactrouter,
   SiReacthookform,
   SiReacttable,
-  SiMysql,
   SiMongodb,
   SiAstro,
   SiBun,
-  SiYarn,
   SiNestjs,
   SiSupabase,
   SiJest,
   SiDocker,
-  SiKotlin
+  SiQuicktime,
+  SiGo,
 } from "react-icons/si";
 
 export type SkillProps = {
@@ -72,4 +65,11 @@ export const STACKS: SkillProps = {
   Npm: <FaNpm size={iconSize} className="text-red-500" />,
   bun: <SiBun size={iconSize} className="text-yellow-50" />,
   Github: <SiGithub size={iconSize} />,
+  Solana: <TbCurrencySolana size={iconSize} className="text-purple-500" />,
+  QuickNode: <SiQuicktime size={iconSize} className="text-orange-500" />,
+  "Gemini": <FaGoogle size={iconSize} className="text-indigo-500" />,
+  Go: <SiGo size={iconSize} className="text-blue-400" />,
+  "C++": <TbBrandCpp size={iconSize} className="text-lightblue-600" />,
 };
+
+

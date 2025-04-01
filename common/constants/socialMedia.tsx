@@ -7,6 +7,7 @@ import {
 import { SiGmail, SiYoutube } from "react-icons/si";
 
 import { SocialMediaProps } from "../types/socialMedia";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 const iconSize = 35;
 const backgroundIconSize = 275;
@@ -14,7 +15,8 @@ const backgroundIconSize = 275;
 export const SOCIAL_MEDIA: SocialMediaProps[] = [
   {
     title: "Stay Connected",
-    description: "Feel free to reach out via email for collaborations or inquiries.",
+    description:
+      "Feel free to reach out via email for collaborations or inquiries.",
     name: "gmail",
     href: "mailto:arhyelphilip024@gmail.com",
     icon: <SiGmail size={iconSize} />,
@@ -28,7 +30,8 @@ export const SOCIAL_MEDIA: SocialMediaProps[] = [
   },
   {
     title: "Follow My Journey",
-    description: "Get the latest updates, behind-the-scenes content, and stories on Instagram.",
+    description:
+      "Get the latest updates, behind-the-scenes content, and stories on Instagram.",
     name: "instagram",
     href: "https://www.instagram.com/iamwyteshadow/",
     icon: <InstagramIcon size={iconSize} />,
@@ -36,12 +39,14 @@ export const SOCIAL_MEDIA: SocialMediaProps[] = [
     textColor: "text-purple-200",
     backgroundColor: "bg-purple-200",
     borderColor: "border-purple-200",
-    backgroundGradientColor: "bg-gradient-to-b from-purple-700 via-pink-500 to-orange-500",
+    backgroundGradientColor:
+      "bg-gradient-to-b from-purple-700 via-pink-500 to-orange-500",
     isShow: true,
   },
   {
     title: "Let's Connect",
-    description: "Network with me on LinkedIn and explore my professional background.",
+    description:
+      "Network with me on LinkedIn and explore my professional background.",
     name: "linkedin",
     href: "https://www.linkedin.com/in/earhyel/",
     icon: <LinkedinIcon size={iconSize} />,
@@ -67,7 +72,8 @@ export const SOCIAL_MEDIA: SocialMediaProps[] = [
   },
   {
     title: "Explore My Code",
-    description: "Check out my projects and open-source contributions on GitHub.",
+    description:
+      "Check out my projects and open-source contributions on GitHub.",
     name: "github",
     href: "https://github.com/arhyel24",
     icon: <GithubIcon size={iconSize} />,
@@ -79,17 +85,31 @@ export const SOCIAL_MEDIA: SocialMediaProps[] = [
     isShow: true,
   },
   {
+    title: "Follow Me on Twitter",
+    description:
+      "Join the conversation on Twitter for updates, insights, and more from the developer community.",
+    name: "twitter",
+    href: "https://twitter.com/earhyel",
+    icon: <FaSquareXTwitter size={iconSize} />,
+    backgroundIcon: <FaSquareXTwitter size={backgroundIconSize} />,
+    textColor: "text-blue-300",
+    backgroundColor: "bg-blue-500",
+    borderColor: "border-blue-500",
+    backgroundGradientColor: "bg-gradient-to-b from-blue-700 to-blue-900",
+    isShow: true,
+  },
+  {
     title: "Watch & Learn",
-    description: "Subscribe to my YouTube channel for tutorials, insights, and project showcases.",
+    description:
+      "Subscribe to my YouTube channel for tutorials, insights, and project showcases.",
     name: "youtube",
     href: "https://www.youtube.com/@earhyel",
     icon: <SiYoutube size={iconSize} />,
     backgroundIcon: <SiYoutube size={backgroundIconSize} />,
-    textColor: "text-red-500",
+    textColor: "text-red-300",
     backgroundColor: "bg-red-500",
     borderColor: "border-red-500",
     backgroundGradientColor: "bg-gradient-to-b from-red-700 to-red-900",
     isShow: true,
   },
 ];
-
