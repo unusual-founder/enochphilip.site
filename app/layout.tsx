@@ -36,6 +36,43 @@ export const metadata: Metadata = {
   },
 };
 
+
+export const structuredData = {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Enoch Philip",
+      "url": "https://enochphilip.site",
+      "image": "/images/enoch.png",
+      "description": "Personal website, portfolio, blog, and developer profile. Showcasing expertise in full-stack development, web technologies, and software engineering.",
+      "sameAs": [
+        "https://twitter.com/earhyel", 
+        "https://www.linkedin.com/in/enoch-philip", 
+        "https://github.com/enoch-philip"
+      ],
+      "mainEntityOfPage": "https://enochphilip.site",
+      "creator": {
+        "@type": "Person",
+        "name": "Enoch Philip",
+        "url": "https://enochphilip.site"
+      },
+      "keywords": "enoch, enoch philip, full-stack developer, software engineer, web development, javascript, react, nextjs, typescript, blockchain, developer portfolio, programming, coding, tech blog, freelance developer",
+      "openGraph": {
+        "@type": "WebPage",
+        "url": "https://enochphilip.site",
+        "name": "Enoch Philip - Full-Stack Developer & Tech Enthusiast",
+        "description": "Explore my personal portfolio and blog, where I share my latest projects, coding tutorials, and tech insights.",
+        "image": "/images/enoch.png"
+      },
+      "twitter": {
+        "@type": "WebPage",
+        "url": "https://enochphilip.site",
+        "name": "Enoch Philip - Developer Portfolio",
+        "description": "Explore my personal website and portfolio for all things related to full-stack development, web technologies, and more.",
+        "image": "/images/enoch.png",
+        "creator": "@earhyel"
+      }
+    }
+
 const RootLayout = async ({
   children,
   params: { locale },
@@ -48,6 +85,11 @@ const RootLayout = async ({
 
   return (
     <html lang={locale} suppressHydrationWarning={true}>
+      <head>
+  <script type="application/ld+json">
+        {JSON.stringify(structuredData)}
+      </script>
+</head>
       <Script
         defer
         src="https://cloud.umami.is/script.js"
