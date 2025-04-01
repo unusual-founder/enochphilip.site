@@ -15,9 +15,9 @@ const LocaleSwitcher = () => {
           label: t("en"),
         },
         {
-          value: "id",
-          label: t("id"),
-        },
+          value: "ha",
+          label: t("ha"),
+        }
       ]}
       label={t("label")}
     />

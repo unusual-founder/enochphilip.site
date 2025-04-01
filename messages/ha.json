@@ -1,0 +1,235 @@
+{
+  "HomePage": {
+    "intro": "Sannu, ni ne Enoch Philip",
+    "location": "Ina zaune a Jihar Borno, Najeriya. NG",
+    "location_type": "Akan Gida | Nesa",
+    "resume": "Mai haɓaka cikakken tsari tare da tushe mai ƙarfi a cikin TypeScript, React, da fasahar blockchain. Ina ƙirƙirar aikace-aikacen yanar gizo da na wayar hannu masu aminci, masu girma, da inganci, yana tabbatar da kwarewar mai amfani mai sauƙi. Ina sha'awar warware matsaloli da samar da mafita na dijital masu kirkira.",
+    "skills": {
+      "title": "Kwarewa",
+      "sub_title": "Kwarewar aikina."
+    },
+    "services": {
+      "title": "Ayyuka",
+      "sub_title": "Ni mai haɓaka cikakken tsari ne wanda ya ƙware wajen gina aikace-aikacen yanar gizo da na wayar hannu masu aiki ga ƙungiyoyi, kamfanoni, cibiyoyi, da farawa. Ina mai da hankali wajen samar da mafita na dijital da aka tsara, masu ƙarfi, da kuma masu tsaro.",
+      "cta": {
+        "title": "Mu Gina Wani Abu Mai Girma!",
+        "sub_title": "Ina samuwa don ayyukan zaman kansa. Ko kuna buƙatar mafita na yanar gizo ko wayar hannu, mu haɗa kai mu kawo ra'ayinku zuwa rai. Tuntuɓe ni, kuma mu ƙirƙiri wani abu mai ban mamaki tare!",
+        "button": "Tuntuɓe Ni"
+      }
+    }
+  },
+  "AboutPage": {
+    "title": "Game da Ni",
+    "description": "Ƙaramin labari game da ni",
+    "resume": {
+      "paragraf_1": "Sannu! Na gode da ziyartar shafin yanar gizon na na kashin kai. Ni mai haɓaka cikakken tsari ne tare da sha'awa ga gina aikace-aikacen yanar gizo da na wayar hannu masu aminci, masu ƙarfi, da inganci. Tare da ƙwarewa a cikin TypeScript, React, Next.js, da haɓaka blockchain, ina jin daɗin warware matsaloli masu wahala da samar da kwarewar mai amfani mai sauƙi.",
+      "paragraf_2": "Na ƙware wajen ƙirƙirar mafita na dijital da ke aiki da kyau kuma mai sauƙin amfani. Tsarin fasahar da nake amfani da shi yana haɗa da JavaScript, TypeScript, React, Next.js, da Express.js, tare da ƙwarewa a cikin tsarin ainihi, biyan kuɗi na NFC, da haɗin blockchain. A matsayin wanda ke da sauƙin canzawa da kuma mai koyo cikin sauri, ina ɗaukar sabbin ƙalubale da ci gaba da haɓaka ƙwarewata domin in ci gaba da kasancewa a gaban sabbin fasahohin.",
+      "paragraf_3": "Haɗin kai da sadarwa suna da muhimmanci ga aikina. Ina jin daɗin aiki tare da ƙungiyoyi, ina ba da ƙwarewata, da kuma koyon daga wasu. Tunanin warware matsaloli na da kuma iya jagoranci suna ba ni damar kewayawa cikin sauƙi cikin ayyukan da suka shafi ƙalubale. Idan kuna neman mai haɓaka wanda zai kawo ra'ayinku zuwa rai, mu haɗa kai mu ƙirƙiri wani abu mai ban mamaki tare!"
+    },
+    "career": {
+      "title": "Ayyuka",
+      "sub_title": "Hanyar aikina ta ƙwararru.",
+      "careers": {
+        "career_0": {
+          "position": "Mai haɓaka Back-end",
+          "company": "Triple Multipurpose Technology",
+          "logo": "/images/careers/triple-multipurpose-technology-logo.jpeg",
+          "location": "Nesa",
+          "location_type": "Nesa",
+          "type": "Horon aiki",
+          "start_date": "2024-01",
+          "end_date": "2024-05",
+          "industry": "Fasaha",
+          "link": "https://www.triplemultipurpose.com/",
+          "responsibilities": {
+            "responsibility_1": "Na haɓaka kuma na kula da tsarin back-end don dandalin haya da siyan ƙasa ta amfani da Node.js da Express.js, yana tabbatar da tsaro da ingancin gudanar da ma'amaloli.",
+            "responsibility_2": "Na yi aiki da bayanai kamar MongoDB da SQL don gudanar da jerin ƙasa, bayanan masu amfani, da rikodin ma'amala.",
+            "responsibility_3": "Na haɗa APIs na ɓangare na uku don aiwatar da biyan kuɗi da ayyukan gano wurare, yana ba da damar masu amfani su kammala saye da haya na ƙasa cikin sauƙi.",
+            "responsibility_4": "Na aiwatar da iko na samun dama bisa ga rawar da masu amfani ke takawa (admin, mai siye, mai sayarwa) don tabbatar da samun damar da ta dace ga albarkatu.",
+            "responsibility_5": "Na inganta tambayoyin bayanai da hanyoyin API don haɓaka da aikin, yana tabbatar da cewa back-end zai iya ɗaukar ƙarin zirga-zirga da tambayoyin da suka haɗa da rikitarwa.",
+            "responsibility_6": "Na haɗa kai da ƙungiyar front-end don haɗa sabuntawa na ainihi da ayyukan masu amfani don samun ƙwarewar mai amfani mai sauƙi."
+          }
+        },
+        "career_1": {
+          "position": "Mai haɓaka Full Stack",
+          "company": "CreatorsLab",
+          "logo": "/images/careers/creatorslab-logo.png",
+          "location": "Nesa",
+          "location_type": "Nesa",
+          "type": "Part-time",
+          "start_date": "2025-02",
+          "end_date": "2025-04",
+          "industry": "Fasaha",
+          "link": "https://www.creatorslab.cc/",
+          "responsibilities": {
+            "responsibility_1": "Na haɓaka kuma na kula da lambar frontend da backend ta amfani da Next.js, Privy.io, da Vercel don haɗawa da amfani da sauƙi.",
+            "responsibility_2": "Na aiwatar da tabbatar da tsaron shiga na masu amfani da haɗin hanyoyin biyan kuɗi ta amfani da Privy.io da sauran kayan aikin.",
+            "responsibility_3": "Na haɗa kai da ƙungiyar aiki daga nesa don gina da ƙaddamar da fasaloli ga abokan ciniki, bisa ga tsarin haɓaka Agile.",
+            "responsibility_4": "Na tabbatar da cewa an cika wa'adin ayyukan yayin da aka kiyaye ingancin lambar da aikin."
+          }
+        }
+      }
+    },
+    "education": {
+      "title": "Ilmi",
+      "sub_title": "Hanyar karatuna da ƙwarewata.",
+      "school": "Jami'ar Maiduguri",
+      "major": "Digiri na Injiniya a cikin Injiniyan Kwamfuta (B.Eng)",
+      "logo": "/images/education/unimaid.png",
+      "location": "Maiduguri, Jihar Borno, Najeriya",
+      "degree": "Digiri na Bachelor's",
+      "start_year": 2022,
+      "end_year": 2027,
+      "link": "https://www.unimaid.edu.ng"
+    },
+    "resume_download_button": "Zazzage Takardar Shaida",
+    "portfolio_download_button": "Zazzage Portfolio"
+  },
+  "AchievementsPage": {
+    "title": "Nasarori",
+    "description": "Nuna takardun shaida da lambobin yabo da na samu a cikin aikin ƙwararru na.",
+    "error": "Hmmm! Wani kuskure ya faru a kan sabar.",
+    "no_data": "Babu nasarori a halin yanzu.",
+    "show_credential": "Duba Takardun Shaida"
+  },
+  "ProjectsPage": {
+    "title": "Ayyuka",
+    "description": "Zabin ayyuka da na yi aiki akansu, duka masu zaman kansu da na buɗe.",
+    "view_project": "Bincika Ayyuka",
+    "tech_stack": "Fasahar da aka yi amfani da ita",
+    "back_button": "Komawa baya",
+    "source_code_text": "Duba Lambar Tushen",
+    "live_demo_text": "Duba Demo na Rayuwa",
+    "error": "Hmmm! Wani kuskure ya faru a kan sabar.",
+    "no_data": "Babu ayyuka a halin yanzu."
+  },
+  "DashboardPage": {
+    "title": "Dashboard",
+    "description": "Maraba da zuwa dashboard na kashin kai, wanda aka gina ta amfani da Next.js API routes da aka ƙaddamar azaman ayyukan serverless.",
+    "error": "Hmmm! Wani kuskure ya faru a kan sabar.",
+    "github": {
+      "title": "Gudunmawa",
+      "sub_title": "Gudunmawar GitHub dina daga shekarar da ta gabata.",
+      "title_total_contribution": "Jimlar Gudunmawa",
+      "title_total_this_week_contributino": "Gudunmawar Mako na Wannan",
+      "title_best_contribution": "Mafi Kyawun Gudunmawa",
+      "title_average_contribution": "Matsakaicin Gudunmawar",
+      "title_less_contribution": "Mafi Kadan Gudunmawa",
+      "title_more_contribution": "Mafi Yawa Gudunmawa",
+      "unit": "ranar"
+    },
+    "wakatime": {
+        "title": "Alamomin Mako",
+        "sub_title": "Statistik dina na WakaTime daga kwanaki 7 da suka gabata.",
+        "last_update": "Sabunta na ƙarshe",
+        "start_date": "Ranar Fara",
+        "end_date": "Ranar Ƙarshe",
+        "daily_average": "Matsakaicin Lokacin Coding na Kowace Rana",
+        "daily_total": "Jimlar Lokacin Coding Wannan Mako",
+        "best_day": "Mafi Kyawun Ranar Coding",
+        "all_time_since_today": "Duk Lokacin (zuwa Yau)",
+        "languages": "Harsunan Shirye-shirye"
+    },
+    "codewars": {
+        "title": "Statistik na Codewars",
+        "sub_title": "Ayyuka da maki na a Codewars.",
+        "title_rank": "Matsayi",
+        "title_honor": "Kyakkyawan Daraja",
+        "title_completed": "Ayyuka Masu Cikawa",
+        "title_leaderboard": "Matsayi a jeri",
+        "title_clan": "Kungiya",
+        "title_skills": "Kwarewa"
+    },
+    "monkeytype": {
+        "title": "Statistik na Monkeytype",
+        "sub_title": "Ayyuka da statistik dina akan Monkeytype.",
+        "joined": "An haɗa",
+        "current_streak": "Yanayin yanzu",
+        "unit_days": "kwanaki",
+        "title_test_started": "Gwajin Farawa",
+        "title_test_completed": "Gwajin Kammala",
+        "title_time_typing": "Lokacin Rubutu",
+        "title_leaderboard": "Jerin Matsayi na Ingilishi na Duniya",
+        "unit_seconds": "Sakonnin"
+    }
+  },
+   "ChatRoomPage": {
+    "title": "Dakin Tatata",
+    "description": "Ji dadin raba ra'ayinka, shawarwari, tambayoyi, ko wani abu dabam!",
+    "placeholder": "Rubuta sakon...",
+    "sign_in": {
+      "title": "Don Allah shiga don fara. Kada ka damu, bayananka suna cikin tsaro.",
+      "label": "Shiga tare da",
+      "signed_label": "An shiga a matsayin",
+      "sign_out_label": "Fita"
+    },
+    "widget": {
+      "title": "Dakin Tatata",
+      "tooltip_title": "Shiga Dakin Tatata",
+      "tooltip_minimize": "Rage",
+      "tooltip_signout": "Fita"
+    }
+  },
+  "ContactPage": {
+    "title": "Tuntuɓi Mu",
+    "description": "Ina son haɗa kai da kai! Ko kana da tambaya, ra'ayin haɗin gwiwa, ko kawai kana so ka ce sannu, ji daɗin tuntuɓar mu.",
+    "social_media": {
+      "title": "Mu haɗa kai a kan Kafofin Sadarwar Zamani",
+      "gmail": {
+        "title": "Mu Ci Gaba da Tuntuɓa",
+        "description": "Kana da wani aikin a zuciya ko kawai kana so ka tattauna? Aika min da imel, zan dawo maka da sauri!"
+      },
+      "instagram": {
+        "title": "Biyo Tafiyata",
+        "description": "Samu kyakkyawar fahimta game da aikina, rayuwata, da abubuwan da ke faruwa a bayan fage. Biyo ni a Instagram don sabuntawa, fahimta, da ƙarfafa gwiwa."
+      },
+      "linkedin": {
+        "title": "Mu Tashi Tare",
+        "description": "Kana neman haɗin kai na ƙwararru, fahimta game da masana'antu, ko damar haɗin gwiwa? Mu haɗa kai a LinkedIn mu gina wani abu mai kyau tare."
+      },
+      "tiktok": {
+        "title": "Kasance Cikin Nishaɗi",
+        "description": "Shiga tare da ni a TikTok don haɗin kai na kirkira, nishaɗi, da abun ciki mai ban sha'awa. Kada ka bari nishaɗin ya wuce!"
+      },
+      "github": {
+        "title": "Bincika Ayyukana",
+        "description": "Shiga cikin ayyukan lambar na, gudunmawar buɗe tushen, da gwaje-gwajen fasaha akan GitHub. Mu haɗa kai mu gina wani abu mai ban mamaki!"
+      },
+      "youtube": {
+        "title": "Koyo da Bincike",
+        "description": "Biya wa tashar YouTube ta don koyawa, nuna ayyuka, da fahimtar tafiyata a cikin ci gaban lamba. Mu tashi tare!"
+      }
+    },
+    "form": {
+      "title": "Ko aika min da sakon",
+      "input_name": "Sunan ka",
+      "input_email": "Imel ɗinka",
+      "input_message": "Sakonka",
+      "button": "Aika Sakon"
+    }
+  },
+  "Footer": {
+    "hire": "Mu Yi Aiki Tare.",
+    "copyright_1": "COPYRIGHT © ",
+    "copyright_2": "Enoch Philip. Duk haƙƙin mallaka."
+  },
+  "LocaleSwitcher": {
+    "en": "🇺🇸",
+    "id": "🇮🇩",
+    "ha": "ha",
+    "label": "Language"
+  },
+  "Navigation": {
+    "Home": "Gida",
+    "About": "Game da",
+    "Achievements": "Nasarori",
+    "Projects": "Ayyuka",
+    "Dashboard": "Dashboard",
+    "Chat Room": "Dakin Tatata",
+    "Contact": "Tuntuɓi"
+  },
+  "NotFoundPage": {
+    "title": "Oops! Shafin ba a samo ba",
+    "button": "Tafi Gida"
+  }
+}
