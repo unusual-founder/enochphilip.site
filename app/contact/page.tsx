@@ -8,11 +8,35 @@ import { METADATA } from "@/common/constants/metadata";
 
 export const metadata: Metadata = {
   title: `Contact ${METADATA.exTitle}`,
-  description: `Contact ${METADATA.creator}`,
+  description: `Get in touch with ${METADATA.creator} for collaborations, inquiries, or just to connect. Let's build something great together!`,
+  keywords: [
+    "contact",
+    "get in touch",
+    "collaborate",
+    "software engineer",
+    "developer inquiries",
+    "freelance projects",
+    `${METADATA.creator}`,
+  ],
   alternates: {
     canonical: `${process.env.DOMAIN}/contact`,
   },
+  openGraph: {
+    title: `Contact ${METADATA.exTitle}`,
+    description: `Reach out to ${METADATA.creator} for partnerships, tech discussions, or project opportunities.`,
+    url: `${METADATA.openGraph.url}/contact`,
+    siteName: METADATA.openGraph.siteName,
+    locale: METADATA.openGraph.locale,
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: `Contact ${METADATA.exTitle}`,
+    description: `Looking to collaborate or have a question? Connect with ${METADATA.creator}.`,
+    site: "@your_twitter_handle",
+  },
 };
+
 
 const ContactPage = () => {
   const t = useTranslations("ContactPage");

@@ -8,11 +8,36 @@ import ChatRoom from "@/modules/chat";
 
 export const metadata: Metadata = {
   title: `Contact ${METADATA.exTitle}`,
-  description: `Contact ${METADATA.creator}`,
+  description: `Reach out to ${METADATA.creator} for collaboration, project inquiries, or professional networking. Let's connect and create something amazing!`,
+  keywords: [
+    "contact",
+    "get in touch",
+    "connect with developer",
+    "hire a developer",
+    "software engineer contact",
+    "collaboration opportunities",
+    "freelance web developer",
+    `${METADATA.creator}`,
+  ],
   alternates: {
     canonical: `${process.env.DOMAIN}/contact`,
   },
+  openGraph: {
+    title: `Contact ${METADATA.exTitle}`,
+    description: `Have a project idea or want to collaborate? Get in touch with ${METADATA.creator} today!`,
+    url: `${METADATA.openGraph.url}/contact`,
+    siteName: METADATA.openGraph.siteName,
+    locale: METADATA.openGraph.locale,
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: `Contact ${METADATA.exTitle}`,
+    description: `Looking to collaborate or need a developer? Connect with ${METADATA.creator}.`,
+    site: "@your_twitter_handle",
+  },
 };
+
 
 const ContactPage = () => {
   const t = useTranslations("ChatRoomPage");

@@ -20,21 +20,41 @@ export const generateMetadata = async ({
 
   return {
     title: `${project.title} ${METADATA.exTitle}`,
-    description: project.description,
+    description: `Discover details about "${project.title}", a project focused on ${project.description}. Learn more about the technologies used, features, and development process.`,
     openGraph: {
+      title: `${project.title} ${METADATA.exTitle}`,
+      description: `In-depth overview of "${project.title}" – a project showcasing innovation, problem-solving, and technical expertise.`,
       images: project.image,
-      url: `${METADATA.openGraph.url}/${project.slug}`,
+      url: `${METADATA.openGraph.url}/projects/${project.slug}`,
       siteName: METADATA.openGraph.siteName,
       locale: METADATA.openGraph.locale,
       type: "article",
       authors: METADATA.creator,
     },
-    keywords: project.title,
+    keywords: [
+      project.title,
+      "software engineering",
+      "web development",
+      "frontend development",
+      "full-stack projects",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "programming portfolio",
+    ],
     alternates: {
       canonical: `${process.env.DOMAIN}/projects/${params.slug}`,
     },
+    twitter: {
+      card: "summary_large_image",
+      title: `${project.title} ${METADATA.exTitle}`,
+      description: `Explore the project "${project.title}", featuring ${project.description}.`,
+      site: "@your_twitter_handle",
+    },
   };
 };
+
 
 const getProjectDetail = async (slug: string): Promise<ProjectItem> => {
   const projects = await getProjectsDataBySlug(slug);
