@@ -61,24 +61,6 @@
             "responsibility_3": "Berkolaborasi dengan tim lintas fungsi untuk mengembangkan Proyek Capstone Berbasis Perusahaan, menerapkan metodologi Agile dan pemecahan masalah dunia nyata.",
             "responsibility_4": "Meningkatkan keterampilan kerja tim, pemecahan masalah, dan komunikasi dalam lingkungan multikultural."
           }
-        },
-        "career_2": {
-          "position": "Pengembang Mobile",
-          "company": "Pt. Amanah Karya Indonesia (Amanah Corp)",
-          "logo": "/images/careers/amanah-karya-indonesia.jpeg",
-          "location": "Depok, Indonesia 🇮🇩",
-          "location_type": "Jarak Jauh",
-          "type": "Magang",
-          "start_date": "2024-12",
-          "end_date": "2025-12",
-          "industry": "sekolah",
-          "link": "https://amanahcorp.co.id/",
-          "responsibilities": {
-            "responsibility_1": "Merancang dan mengembangkan aplikasi mobile menggunakan Kotlin, menggabungkan Room Database, Hilt, dan ViewModel untuk kinerja dan skalabilitas yang optimal.",
-            "responsibility_2": "Menerapkan fitur yang aman dan ramah pengguna yang disesuaikan dengan platform berbagi.link untuk meningkatkan keterlibatan dan aksesibilitas pengguna.",
-            "responsibility_3": "Bekerja sama dengan PT Amanah Corp untuk memastikan keselarasan dengan tujuan bisnis dan memberikan solusi dunia nyata yang berdampak.",
-            "responsibility_4": "Memperkuat keterampilan teknis dan keterampilan lunak, termasuk pemecahan masalah, kerja tim, dan komunikasi, dalam lingkungan profesional yang multikultural."
-          }
         }
       }
     },

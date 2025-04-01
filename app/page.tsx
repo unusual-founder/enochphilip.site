@@ -9,6 +9,8 @@ export const metadata: Metadata = {
   description: `Explore ${METADATA.creator}'s personal website, featuring a portfolio of projects, blog posts, and professional experience in web development and software engineering.`,
   keywords: [
     `${METADATA.creator}`,
+    `${METADATA.keywords}`,
+    `${METADATA.keyword}`,
     "software engineer portfolio",
     "web developer",
     "full-stack developer",

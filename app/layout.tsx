@@ -2,6 +2,7 @@ import NextTopLoader from "nextjs-toploader";
 import Script from "next/script";
 import { getServerSession } from "next-auth";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import type { Metadata } from "next";
@@ -72,6 +73,7 @@ const RootLayout = async ({
           </NextAuthProvider>
         </NextIntlClientProvider>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
