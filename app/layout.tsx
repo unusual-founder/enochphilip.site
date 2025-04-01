@@ -46,8 +46,8 @@ export const structuredData = {
       "description": "Personal website, portfolio, blog, and developer profile. Showcasing expertise in full-stack development, web technologies, and software engineering.",
       "sameAs": [
         "https://twitter.com/earhyel", 
-        "https://www.linkedin.com/in/enoch-philip", 
-        "https://github.com/enoch-philip"
+        "https://www.linkedin.com/in/earhyel", 
+        "https://github.com/arhyel24"
       ],
       "mainEntityOfPage": "https://enochphilip.site",
       "creator": {
@@ -86,10 +86,10 @@ const RootLayout = async ({
   return (
     <html lang={locale} suppressHydrationWarning={true}>
       <head>
-  <script type="application/ld+json">
-        {JSON.stringify(structuredData)}
-      </script>
-</head>
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </head>
       <Script
         defer
         src="https://cloud.umami.is/script.js"
