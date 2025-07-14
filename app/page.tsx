@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${METADATA.creator} | Software Engineer`,
     description: `Check out ${METADATA.creator}'s portfolio, blog, and projects in web development and software engineering.`,
-    site: "@your_twitter_handle",
+    site: "@earhyel",
     images: [METADATA.profile],
   },
 };

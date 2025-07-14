@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: `Contact ${METADATA.exTitle}`,
     description: `Looking to collaborate or need a developer? Connect with ${METADATA.creator}.`,
-    site: "@your_twitter_handle",
+    site: "@earhyel",
   },
 };
 

@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: `Projects ${METADATA.exTitle}`,
     description:
       "Browse my latest software engineering projects, including web and mobile applications.",
-    site: "@your_twitter_handle",
+    site: "@earhyel",
   },
 };
 

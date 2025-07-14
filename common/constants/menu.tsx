@@ -4,6 +4,7 @@ import {
   BiCollection as ProjectIcon,
   BiCategory as DashboardIcon,
   BiBook as ContactIcon,
+  BiBook,
 } from "react-icons/bi";
 import { PiChatTeardropDotsBold as ChatRoomIcon } from "react-icons/pi";
 import { PiCertificate as AchievementIcon } from "react-icons/pi";
@@ -44,6 +45,14 @@ export const MENU_ITEMS: MenuItemProps[] = [
     isShow: true,
     isExternal: false,
     eventName: "Pages: Projects",
+  },
+  {
+    title: "Blog",
+    href: "/blog",
+    icon: <BiBook size={iconSize} />,
+    isShow: true,
+    isExternal: false,
+    eventName: "Pages: Blog",
   },
   {
     title: "Dashboard",

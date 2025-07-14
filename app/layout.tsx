@@ -13,6 +13,7 @@ import ThemeProviderContext from "@/common/stores/theme";
 import NextAuthProvider from "@/SessionProvider";
 import { METADATA } from "@/common/constants/metadata";
 import { onestSans, soraSans } from "@/common/styles/fonts";
+import { ThemeModeScript } from "flowbite-react";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
@@ -89,6 +90,7 @@ const RootLayout = async ({
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>
+        <ThemeModeScript />
       </head>
       <Script
         defer

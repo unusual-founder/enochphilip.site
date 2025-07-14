@@ -52,7 +52,7 @@ export const ChatRoom = ({ isWidget = false }: { isWidget?: boolean }) => {
     };
     try {
       await axios.post("/api/chat", newMessageData);
-      notif("Successfully to send message");
+      notif("Message sent successfully!");
     } catch (error) {
       console.error("Error:", error);
       notif("Failed to send message");
@@ -62,7 +62,7 @@ export const ChatRoom = ({ isWidget = false }: { isWidget?: boolean }) => {
   const handleDeleteMessage = async (id: string) => {
     try {
       await axios.delete(`/api/chat/${id}`);
-      notif("Successfully to delete message");
+      notif("Message deleted successfully!");
     } catch (error) {
       notif("Failed to delete message");
     }

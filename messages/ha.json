@@ -92,6 +92,20 @@
     "no_data": "Babu nasarori a halin yanzu.",
     "show_credential": "Duba Takardun Shaida"
   },
+  "CreateBlogPage": {
+  "title": "Ƙirƙiri Blog",
+  "description": "Ƙirƙiri kuma wallafa sabbin rubuce-rubuce akan fasaha, haɓaka software, da sauran batutuwa masu ban sha'awa.",
+  "error": "Hmmm! Wani kuskure ya faru a kan sabar.",
+  "no_data": "Babu blogs da aka ƙirƙira a halin yanzu.",
+  "publish": "Wallafa",
+  "save_draft": "Ajiye azaman jeri",
+  "edit": "Gyara",
+  "delete": "Share",
+  "confirm_delete": "Ka tabbata kana son share wannan blog?",
+  "success_message": "An wallafa blog ɗinka cikin nasara!",
+  "update_message": "An sabunta blog ɗinka cikin nasara!",
+  "delete_message": "An share blog ɗinka cikin nasara!"
+},
   "ProjectsPage": {
     "title": "Ayyuka",
     "description": "Zabin ayyuka da na yi aiki akansu, duka masu zaman kansu da na buɗe.",
@@ -103,6 +117,17 @@
     "error": "Hmmm! Wani kuskure ya faru a kan sabar.",
     "no_data": "Babu ayyuka a halin yanzu."
   },
+  "BlogPage": {
+  "title": "Blog",
+  "description": "Tarin labarai masu fa’ida, koyarwa, da tunani kan ci gaban software da fasaha.",
+  "view_article": "Karanta Labari",
+  "tech_stack": "Fasahohin da Aka Yi Amfani da Su",
+  "back_button": "Koma Baya",
+  "source_code_text": "Duba Lambar Asali",
+  "live_demo_text": "Duba Gwaji Kai Tsaye",
+  "error": "A'a! Wani abu ya faru da ba daidai ba akan sabar.",
+  "no_data": "Babu rubuce-rubucen blog a halin yanzu."
+},
   "DashboardPage": {
     "title": "Dashboard",
     "description": "Maraba da zuwa dashboard na kashin kai, wanda aka gina ta amfani da Next.js API routes da aka ƙaddamar azaman ayyukan serverless.",
@@ -228,6 +253,7 @@
     "About": "Game da",
     "Achievements": "Nasarori",
     "Projects": "Ayyuka",
+    "Blog": "Blog da Labarai",
     "Dashboard": "Dashboard",
     "Chat Room": "Dakin Tatata",
     "Contact": "Tuntuɓi"

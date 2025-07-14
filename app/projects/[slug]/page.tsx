@@ -50,7 +50,7 @@ export const generateMetadata = async ({
       card: "summary_large_image",
       title: `${project.title} ${METADATA.exTitle}`,
       description: `Explore the project "${project.title}", featuring ${project.description}.`,
-      site: "@your_twitter_handle",
+      site: "@earhyel",
     },
   };
 };
