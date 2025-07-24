@@ -4,19 +4,40 @@ import BackButton from "@/common/components/elements/BackButton";
 import Container from "@/common/components/elements/Container";
 import PageHeading from "@/common/components/elements/PageHeading";
 import ProjectDetail from "@/modules/projects/components/ProjectDetail";
+
 import { ProjectItem } from "@/common/types/projects";
 import { METADATA } from "@/common/constants/metadata";
 import { loadMdxFiles } from "@/common/libs/mdx";
-import { getProjectsDataBySlug } from "@/services/projects";
+import axios from "axios";
 
 interface ProjectDetailPageProps {
   params: { slug: string };
 }
 
+const getProjectDetail = async (slug: string): Promise<ProjectItem> => {
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+
+  try {
+    const response = await axios.get(`${baseUrl}/api/projects/${slug}`);
+    const project = response.data;
+
+    const contents = loadMdxFiles();
+    const matchedContent = contents.find((item) => item.slug === slug);
+
+    return {
+      ...project,
+      content: matchedContent?.content || null,
+    };
+  } catch (error) {
+    console.error("Failed to fetch project:", error);
+    throw new Error("Project not found or server error");
+  }
+};
+
 export const generateMetadata = async ({
   params,
 }: ProjectDetailPageProps): Promise<Metadata> => {
-  const project = await getProjectDetail(params?.slug);
+  const project = await getProjectDetail(params.slug);
 
   return {
     title: `${project.title} ${METADATA.exTitle}`,
@@ -44,7 +65,7 @@ export const generateMetadata = async ({
       "programming portfolio",
     ],
     alternates: {
-      canonical: `${process.env.DOMAIN}/projects/${params.slug}`,
+      canonical: `${process.env.DOMAIN}/projects/${project.slug}`,
     },
     twitter: {
       card: "summary_large_image",
@@ -55,26 +76,17 @@ export const generateMetadata = async ({
   };
 };
 
-
-const getProjectDetail = async (slug: string): Promise<ProjectItem> => {
-  const projects = await getProjectsDataBySlug(slug);
-  const contents = loadMdxFiles();
-  const content = contents.find((item) => item.slug === slug);
-  const response = { ...projects, content: content?.content };
-  const data = JSON.parse(JSON.stringify(response));
-  return data;
-};
-
 const ProjectDetailPage = async ({ params }: ProjectDetailPageProps) => {
-  const data = await getProjectDetail(params?.slug);
-
-  const PAGE_TITLE = data?.title;
-  const PAGE_DESCRIPTION = data?.description;
+  const data = await getProjectDetail(params.slug);
 
   return (
-    <Container data-aos="fade-up">
+    <Container
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+    >
       <BackButton url="/projects" />
-      <PageHeading title={PAGE_TITLE} description={PAGE_DESCRIPTION} />
+      <PageHeading title={data.title} description={data.description} />
       <ProjectDetail {...data} />
     </Container>
   );

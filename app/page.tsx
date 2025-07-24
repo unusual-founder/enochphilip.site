@@ -44,10 +44,13 @@ export const metadata: Metadata = {
   },
 };
 
-
 const HomePage = () => {
   return (
-    <Container data-aos="fade-up">
+    <Container
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+    >
       <Home />
     </Container>
   );

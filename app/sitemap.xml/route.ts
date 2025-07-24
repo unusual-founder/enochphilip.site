@@ -1,21 +1,29 @@
 import { NextResponse } from "next/server";
 import axios from "axios";
 
-const siteUrl = process.env.DOMAIN as string
+const siteUrl = process.env.DOMAIN as string;
 
-const staticPages = ["/", "/about", "/dashboard", "/projects", "/contact", "/blog", "/achievements"];
+const staticPages = [
+  "/",
+  "/about",
+  "/dashboard",
+  "/projects",
+  "/contact",
+  "/blog",
+  "/achievements",
+];
 
 async function fetchData(endpoint: string) {
-    console.log("Fetching route:", `${siteUrl}/api/${endpoint}`)
+  console.log("Fetching route:", `${siteUrl}/api/${endpoint}`);
   try {
     const { data } = await axios.get(`${siteUrl}/api/${endpoint}`);
     if (!Array.isArray(data) || data.length === 0) {
-      console.warn(`⚠️ Warning: No data found for ${endpoint}`);
+      console.warn(`Warning: No data found for ${endpoint}`);
       return [];
     }
     return data;
   } catch (error) {
-    console.error(`❌ Error fetching ${endpoint}:`, (error as Error).message);
+    console.error(`Error fetching ${endpoint}:`, (error as Error).message);
     return [];
   }
 }
@@ -28,14 +36,27 @@ export async function GET() {
       fetchData("achievements"),
     ]);
 
-    const projectPaths = projects.length ? projects.map((p: { slug: string }) => `/projects/${p.slug}`) : [];
-    const blogPaths = blogs.length ? blogs.map((b: { slug: string }) => `/blog/view/${b.slug}`) : [];
-    const achievementPaths = achievements.length ? achievements.map((a: { slug: string }) => `/achievements/${a.slug}`) : [];
+    const projectPaths = projects.length
+      ? projects.map((p: { slug: string }) => `/projects/${p.slug}`)
+      : [];
+    const blogPaths = blogs.length
+      ? blogs.map((b: { slug: string }) => `/blog/view/${b.slug}`)
+      : [];
+    const achievementPaths = achievements.length
+      ? achievements.map((a: { slug: string }) => `/achievements/${a.slug}`)
+      : [];
 
-    const allPages = [...staticPages, ...projectPaths, ...blogPaths, ...achievementPaths];
+    const allPages = [
+      ...staticPages,
+      ...projectPaths,
+      ...blogPaths,
+      ...achievementPaths,
+    ];
 
     if (allPages.length === staticPages.length) {
-      console.warn("⚠️ Warning: No dynamic content found. Sitemap will only contain static pages.");
+      console.warn(
+        "Warning: No dynamic content found. Sitemap will only contain static pages.",
+      );
     }
 
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -48,7 +69,7 @@ export async function GET() {
           <lastmod>${new Date().toISOString()}</lastmod>
           <changefreq>${page.startsWith("/projects") || page.startsWith("/blog") ? "weekly" : "monthly"}</changefreq>
           <priority>${page === "/" ? 1.0 : page.startsWith("/projects") || page.startsWith("/blog") ? 0.7 : 0.8}</priority>
-        </url>`
+        </url>`,
         )
         .join("")}
     </urlset>`;
@@ -59,7 +80,7 @@ export async function GET() {
       },
     });
   } catch (error) {
-    console.error("❌ Error generating sitemap:", error);
+    console.error("Error generating sitemap:", error);
     return new NextResponse("Internal Server Error", { status: 500 });
   }
 }

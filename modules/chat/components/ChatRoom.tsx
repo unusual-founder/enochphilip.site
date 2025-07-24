@@ -2,7 +2,6 @@
 
 import useSWR from "swr";
 import axios from "axios";
-import { v4 as uuidv4 } from "uuid";
 import { useEffect, useState } from "react";
 import { useSession } from "next-auth/react";
 
@@ -12,21 +11,15 @@ import ChatList from "./ChatList";
 import ChatItemSkeleton from "./ChatItemSkeleton";
 
 import { MessageProps } from "@/common/types/chat";
-import { fetcher } from "@/services/fetcher";
-import { createClient } from "@/common/utils/client";
 import useNotif from "@/hooks/useNotif";
 
 export const ChatRoom = ({ isWidget = false }: { isWidget?: boolean }) => {
-  const { data, isLoading } = useSWR("/api/chat", fetcher);
+  const { data: session } = useSession();
+  const notif = useNotif();
 
   const [messages, setMessages] = useState<MessageProps[]>([]);
   const [isReply, setIsReply] = useState({ is_reply: false, name: "" });
-
-  const { data: session } = useSession();
-
-  const supabase = createClient();
-
-  const notif = useNotif();
+  const [isLoading, setIsLoading] = useState(true);
 
   const handleClickReply = (name: string) => {
     if (!session?.user) return notif("Please sign in to reply");
@@ -38,9 +31,7 @@ export const ChatRoom = ({ isWidget = false }: { isWidget?: boolean }) => {
   };
 
   const handleSendMessage = async (message: string) => {
-    const messageId = uuidv4();
     const newMessageData = {
-      id: messageId,
       name: session?.user?.name,
       email: session?.user?.email,
       image: session?.user?.image,
@@ -48,7 +39,6 @@ export const ChatRoom = ({ isWidget = false }: { isWidget?: boolean }) => {
       is_reply: isReply.is_reply,
       reply_to: isReply.name,
       is_show: true,
-      created_at: new Date().toISOString(),
     };
     try {
       await axios.post("/api/chat", newMessageData);
@@ -69,45 +59,39 @@ export const ChatRoom = ({ isWidget = false }: { isWidget?: boolean }) => {
   };
 
   useEffect(() => {
-    if (data) setMessages(data);
-  }, [data]);
+    let pollingInterval: NodeJS.Timeout;
 
-  useEffect(() => {
-    const channel = supabase
-      .channel("realtime chat")
-      .on(
-        "postgres_changes",
-        {
-          event: "INSERT",
-          schema: "public",
-          table: "messages",
-        },
-        (payload) => {
-          setMessages((prevMessages) => [
-            ...prevMessages,
-            payload.new as MessageProps,
-          ]);
-        },
-      )
-      .on(
-        "postgres_changes",
-        {
-          event: "DELETE",
-          schema: "public",
-          table: "messages",
-        },
-        (payload) => {
-          setMessages((prevMessages) =>
-            prevMessages.filter((msg) => msg.id !== payload.old.id),
-          );
-        },
-      )
-      .subscribe();
+    const pollMessages = async () => {
+      try {
+        const response = await axios.get("/api/chat");
+        const latestMessages: MessageProps[] = response.data;
 
-    return () => {
-      supabase.removeChannel(channel);
+        setMessages((prevMessages) => {
+          const prevIds = prevMessages.map((msg) => msg.id);
+          const newIds = latestMessages.map((msg) => msg.id);
+
+          const hasNew = newIds.some((id) => !prevIds.includes(id));
+          const hasDeleted = prevIds.some((id) => !newIds.includes(id));
+
+          if (hasNew || hasDeleted) {
+            return latestMessages;
+          }
+
+          return prevMessages;
+        });
+
+        setIsLoading(false);
+      } catch (error) {
+        console.error("Polling error:", error);
+        setIsLoading(false);
+      }
     };
-  }, [supabase]);
+
+    pollMessages();
+    pollingInterval = setInterval(pollMessages, 3000);
+
+    return () => clearInterval(pollingInterval);
+  }, []);
 
   return (
     <>

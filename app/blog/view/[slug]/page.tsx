@@ -1,13 +1,13 @@
 import { Metadata } from "next";
+import axios from "axios";
 
 import BackButton from "@/common/components/elements/BackButton";
 import Container from "@/common/components/elements/Container";
 import PageHeading from "@/common/components/elements/PageHeading";
+import BlogDetail from "@/modules/blogs/components/UI/blogDetail";
+
 import { BlogItem as BlogPostItem } from "@/common/types/blogs";
 import { METADATA } from "@/common/constants/metadata";
-import { loadMdxFiles } from "@/common/libs/mdx";
-import { getBlogsDataBySlug } from "@/services/blogs"; 
-import BlogDetail from "@/modules/blogs/components/UI/blogDetail";
 
 interface BlogPostDetailPageProps {
   params: { slug: string };
@@ -16,7 +16,7 @@ interface BlogPostDetailPageProps {
 export const generateMetadata = async ({
   params,
 }: BlogPostDetailPageProps): Promise<Metadata> => {
-  const blogPost = await getBlogPostDetail(params?.slug);
+  const blogPost = await getBlogPostDetail(params.slug);
 
   return {
     title: `${blogPost.title} ${METADATA.exTitle}`,
@@ -52,20 +52,27 @@ export const generateMetadata = async ({
 };
 
 const getBlogPostDetail = async (slug: string): Promise<BlogPostItem> => {
-  const data = await getBlogsDataBySlug(slug);
-  return data;
+  try {
+    const res = await axios.get(
+      `${process.env.NEXT_PUBLIC_SITE_URL}/api/blogs/${slug}`,
+    );
+    return res.data;
+  } catch (error) {
+    throw new Error("Failed to fetch blog post data");
+  }
 };
 
 const BlogPostDetailPage = async ({ params }: BlogPostDetailPageProps) => {
-  const data = await getBlogPostDetail(params?.slug);
-
-  const PAGE_TITLE = data?.title;
-  const PAGE_DESCRIPTION = data?.description;
+  const data = await getBlogPostDetail(params.slug);
 
   return (
-    <Container data-aos="fade-up">
+    <Container
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+    >
       <BackButton url="/blog" />
-      <PageHeading title={PAGE_TITLE} description={PAGE_DESCRIPTION} />
+      <PageHeading title={data.title} description={data.description} />
       <BlogDetail {...data} />
     </Container>
   );

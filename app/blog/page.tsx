@@ -41,13 +41,17 @@ export const metadata: Metadata = {
 
 function Page() {
   const t = useTranslations("BlogPage");
-  
-    return (
-      <Container data-aos="fade-up">
-        <PageHeading title={t("title")} description={t("description")} />
-        <Blogs />
-      </Container>
-    );
+
+  return (
+    <Container
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+    >
+      <PageHeading title={t("title")} description={t("description")} />
+      <Blogs />
+    </Container>
+  );
 }
 
 export default Page;

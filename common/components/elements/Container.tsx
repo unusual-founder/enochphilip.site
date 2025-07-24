@@ -1,14 +1,17 @@
-interface ContainerProps {
+"use client";
+
+import { motion, MotionProps } from "framer-motion";
+
+interface ContainerProps extends MotionProps {
   children: React.ReactNode;
   className?: string;
-  [propName: string]: React.ReactNode | string | undefined;
 }
 
-const Container = ({ children, className = "", ...others }: ContainerProps) => {
+const Container = ({ children, className = "", ...props }: ContainerProps) => {
   return (
-    <div className={`mt-20 p-8 lg:mt-0 ${className} `} {...others}>
+    <motion.div className={`mt-20 p-8 lg:mt-0 ${className}`} {...props}>
       {children}
-    </div>
+    </motion.div>
   );
 };
 

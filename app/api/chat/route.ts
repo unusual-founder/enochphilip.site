@@ -1,16 +1,16 @@
-import { createClient } from "@/common/utils/server";
 import { NextResponse } from "next/server";
+import { connectDB } from "@/lib/connectDB";
+import { Message } from "@/models/Message";
 
 export const GET = async () => {
-  const supabase = createClient();
   try {
-    const { data, error } = await supabase.from("messages").select();
+    await connectDB();
 
-    if (error) {
-      return NextResponse.json({ message: error.message }, { status: 500 });
-    }
+    const messages = await Message.find({ is_show: true }).sort({
+      created_at: -1,
+    });
 
-    return NextResponse.json(data, { status: 200 });
+    return NextResponse.json(messages, { status: 200 });
   } catch (error) {
     return NextResponse.json(
       { message: "Internal Server Error" },
@@ -20,11 +20,38 @@ export const GET = async () => {
 };
 
 export const POST = async (req: Request) => {
-  const supabase = createClient();
   try {
+    await connectDB();
+
     const body = await req.json();
-    await supabase.from("messages").insert([body]);
-    return NextResponse.json("Data saved successfully", { status: 200 });
+    const {
+      name,
+      email,
+      image,
+      message,
+      is_reply = false,
+      reply_to = null,
+    } = body;
+
+    if (!name || !email) {
+      return NextResponse.json(
+        { message: "Name and email are required." },
+        { status: 400 },
+      );
+    }
+
+    const newMessage = new Message({
+      name,
+      email,
+      image,
+      message,
+      is_reply,
+      reply_to,
+    });
+
+    await newMessage.save();
+
+    return NextResponse.json("Data saved successfully", { status: 201 });
   } catch (error) {
     return NextResponse.json(
       { message: "Internal Server Error" },
